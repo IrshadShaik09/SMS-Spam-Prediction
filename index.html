@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMS SPAM PREDICTION</title>
+</head>
+<body>
+ <h1> EMAIL\SMS SPAM PREDICTOR </h1>
+ {% if result%}
+ <p>{{  result }}</p>
+ {% endif %}
+ <FORM method="post" action="/predict">
+     <LABEL>Enter your message:</LABEL><br><br>
+     <input type="text" name="message"><br><br>
+     <input type ="submit" value="Predict"><br><br>
+ </FORM>
+
+
+</body>
+</html>
